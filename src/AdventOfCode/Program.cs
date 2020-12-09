@@ -6,7 +6,7 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            var d = new Day6().Part2();
+            var d = new Day9().Part2();
             Console.WriteLine(d);
         }
     }
