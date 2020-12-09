@@ -30,6 +30,9 @@
     <None Update="input9">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="input7">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
