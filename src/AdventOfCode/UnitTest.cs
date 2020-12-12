@@ -10,7 +10,7 @@ namespace AdventOfCode
         [Test]
         public void Run()
         {
-            var d = new Day11().Part2();
+            var d = new Day7().Part2();
             Console.WriteLine(d);
         }
         
@@ -38,6 +38,16 @@ namespace AdventOfCode
             }
             
             Assert.AreEqual(parentNode, "light red");
+        }
+        
+        [Test]
+        public void Day7Test()
+        {
+            var part1 = new Day7().Part1();
+            var part2 = new Day7().Part2();
+            
+            Assert.AreEqual(89084, part2);
+            Assert.AreEqual(185, part1);
         }
     }
 }
