@@ -10,7 +10,7 @@ namespace AdventOfCode
         [Test]
         public void Run()
         {
-            var d = new Day7().Part2();
+            var d = new Day13().Part2();
             Console.WriteLine(d);
         }
         
