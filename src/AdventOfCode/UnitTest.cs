@@ -10,8 +10,8 @@ namespace AdventOfCode
         [Test]
         public void Run()
         {
-            var d = new Day13().Part2();
-            Console.WriteLine(d);
+            var d = new Day18().Part1();
+            Console.WriteLine(d); // 17827727081 / 647857897
         }
         
         [Test]
@@ -48,6 +48,22 @@ namespace AdventOfCode
             
             Assert.AreEqual(89084, part2);
             Assert.AreEqual(185, part1);
+        }
+
+        [TestCase("1 + (2 * 3)", 7)]
+        [TestCase("2 * 3 + (4 * 5)", 26)]
+        [TestCase("1 + (2 * 3) + (4 * (5 + 6))", 51)]
+        [TestCase("1 + 2 * 3 + 4 * 5 + 6", 71)]
+        [TestCase("5 + (8 * 3 + 9 + 3 * 4 * 3)", 437)]
+        [TestCase("5 * 9 * (7 * 3 * 3 + 9 * 3 + (8 + 6 * 4))", 12240)]
+        [TestCase("((2 + 4 * 9) * (6 + 9 * 8 + 6) + 6) + 2 + 4 * 2", 13632)]
+        public void Day18Test(string input, int expected)
+        {
+            var d18 = new Day18();
+            
+            var actual = d18.Evaluate(input);
+            
+            Assert.AreEqual(expected, actual);
         }
     }
 }
