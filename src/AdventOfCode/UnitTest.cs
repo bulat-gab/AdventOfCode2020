@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Text.RegularExpressions;
 using NUnit.Framework;
 
@@ -10,7 +11,7 @@ namespace AdventOfCode
         [Test]
         public void Run()
         {
-            var d = new Day18().Part1();
+            var d = new Day22().Part1();
             Console.WriteLine(d); // 17827727081 / 647857897
         }
         
@@ -64,6 +65,15 @@ namespace AdventOfCode
             var actual = d18.Evaluate(input);
             
             Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Day22Part1Test()
+        {
+            var d = new Day22("./TestData/input22");
+            var actual = d.Part1();
+            
+            Assert.AreEqual(306, actual);
         }
     }
 }
